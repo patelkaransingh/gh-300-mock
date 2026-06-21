@@ -1,0 +1,93 @@
+body {
+  font-family: Inter, Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+.app {
+  max-width: 900px;
+  margin: 24px auto;
+  padding: 12px;
+}
+.controls {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-bottom: 12px;
+}
+.questionCard {
+  border: 1px solid #ddd;
+  padding: 16px;
+  border-radius: 6px;
+  margin-bottom: 12px;
+}
+.options {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.btn {
+  padding: 8px 12px;
+  border-radius: 6px;
+  border: 1px solid #444;
+  background: #fff;
+  cursor: pointer;
+}
+.btn-primary {
+  background: #0066ff;
+  color: white;
+  border-color: #0051d4;
+}
+.summary {
+  background: #f7f7f7;
+  padding: 16px;
+  border-radius: 6px;
+}
+.small {
+  font-size: 0.9rem;
+}
+
+/* Feedback styles */
+.optionLabel {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+  padding: 8px;
+  border-radius: 6px;
+}
+.optionLabel.correct {
+  background: #e6ffed;
+  border: 1px solid #2ecc71;
+}
+.optionLabel.incorrect {
+  background: #ffecec;
+  border: 1px solid #e74c3c;
+}
+.explanation {
+  margin-top: 8px;
+  padding: 10px;
+  background: #f1f5f9;
+  border-radius: 6px;
+}
+.result-pass {
+  color: #0b6623;
+  font-weight: 700;
+}
+.result-fail {
+  color: #8b0000;
+  font-weight: 700;
+}
+.summary-score {
+  font-size: 1.1rem;
+  margin-top: 8px;
+}
+
+/* Color whole question card on final summary */
+.questionCard.correct {
+  background: #f0fff4;
+  border-color: #2ecc71;
+}
+.questionCard.incorrect {
+  background: #fff6f6;
+  border-color: #e74c3c;
+}
